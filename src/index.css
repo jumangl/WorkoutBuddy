@@ -94,6 +94,14 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+/* Adjustments for form inputs */
+input[type="text"],
+input[type="number"] {
+  padding: 8px; /* Reduce padding */
+  font-size: 0.9em; /* Reduce font size */
+  margin-bottom: 12px; /* Adjust margin bottom */
+}
 form button {
   background: var(--primary);
   border: 0;
@@ -102,6 +110,17 @@ form button {
   font-family: "Poppins";
   border-radius: 4px;
   cursor: pointer;
+}
+
+.btn {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
 }
 div.error {
   padding: 10px;
@@ -123,4 +142,16 @@ input.error {
   display: flex;
   color: white;
   border-radius: 5px;
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 600px) {
+  .home {
+    display: flex;
+    flex-direction: column; /* Change the flex direction to column */
+  }
+
+  .workouts {
+    margin-top: -70px;
+  }
 }

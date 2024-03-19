@@ -1,0 +1,29 @@
+/* CSS for desktop screens */
+header {
+  background: #fff;
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+/* CSS for mobile screens */
+@media screen and (max-width: 600px) {
+  header .container {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  header h1 {
+    font-size: 1.2rem; /* Decrease font size for smaller screens */
+  }
+}
